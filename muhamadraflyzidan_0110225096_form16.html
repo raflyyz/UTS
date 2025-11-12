@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Ruangan</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+<div class="container">
+    <h2>Booking Ruangan</h2>
+    <form action="#" method="post">
+
+        <div class="form-group">
+            <label for="nama_peminjam">Nama Peminjam :</label>
+            <input type="text" id="nama_peminjam" name="nama_peminjam" value="Muhamad Rafly Zidan">
+        </div>
+
+        <div class="form-group">
+            <label for="nama_ruangan">Nama Ruangan :</label>
+            <select id="nama_ruangan" name="nama_ruangan">
+                <option value="ruang_musik">Ruang Musik</option>
+                <option value="ruang_auditorium">Ruang Auditorium</option>
+                <option value="ruang_komputer">Ruang Komputer</option>
+            </select>
+        </div>
+
+        <div class="form-group large-input">
+            <label for="deskripsi">Deskripsi Kegiatan :</label>
+            <textarea id="deskripsi" name="deskripsi" rows="3"></textarea> 
+        </div>
+
+        <div class="form-group checkbox-row">
+            <label>Fasilitas Tambahan :</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="sound_system" name="fasilitas[]" value="sound_system">
+                <label for="sound_system">Sound System</label>
+
+                <input type="checkbox" id="wifi" name="fasilitas[]" value="wifi">
+                <label for="wifi">Wifi</label>
+
+                <input type="checkbox" id="layar_besar" name="fasilitas[]" value="layar_besar">
+                <label for="layar_besar">Layar Besar</label>
+                
+                <input type="checkbox" id="ac" name="fasilitas[]" value="AC">
+                <label for="AC">AC</label>
+            </div>
+        </div>
+
+        <div class="form-group date-input">
+            <label for="tanggal_pinjam">Tanggal Pinjam :</label>
+            <input type="date" id="tanggal_pinjam" name="tanggal_pinjam"> 
+        </div>
+
+        <div class="form-group">
+            <label for="kontak_person">Kontak Person :</label>
+            <input type="text" id="kontak_person" name="kontak_person">
+        </div>
+
+        <div class="form-group">
+            <label for="telepon">Telpon/HP :</label>
+            <input type="text" id="telepon" name="telepon">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="button-group">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
